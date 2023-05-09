@@ -1,0 +1,26 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+	border: 3px solid black;
+}
+td {
+	text-align: left;
+	padding: 100px;
+	border: 3px solid black;
+	font-size: 40px;
+	text-align: center;
+}
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+	td {
+		padding: 50px;
+		font-size: 30px;
+	}
+}
+@media (max-width: 480px) {
+	td {
+		padding: 25px;
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,45 @@
+* {
+	* box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+h2 {
+	text-align: center;	
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-image: linear-gradient(to right, #9E768F , #9FA4C4);
+	color: #3D0E61;
+	height: 65px;
+	padding: 1em;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.menu li:hover{
+	color: white;
+	cursor: pointer;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu > li {
+	margin: 0 1rem;
+	overflow: hidden;
+}
+
+.menu-
