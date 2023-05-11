@@ -1,45 +1,52 @@
-* {
-	* box-sizing: border-box;
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
-body {
-	margin: 0;
-	height: 100%;
+nav a:hover {
+    text-decoration:dotted;
+    color: rgb(212, 0, 255);
 }
 
-h2 {
-	text-align: center;	
+nav ul li {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: -10px;
 }
 
-.nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	background-image: linear-gradient(to right, #9E768F , #9FA4C4);
-	color: #3D0E61;
-	height: 65px;
-	padding: 1em;
-	font-weight: bolder;
-	font-size: 25px;
+nav .open {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.menu li:hover{
-	color: white;
-	cursor: pointer;
+nav label {
+    font-size: 60px;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
 }
 
-.menu {
-	display: flex;
-	flex-direction: row;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+nav span {
+    margin-top: -15px;
 }
 
-.menu > li {
-	margin: 0 1rem;
-	overflow: hidden;
+#menustate,
+nav ul,
+nav .close {
+    display: none;
+    font-size: 60px;
+    margin-top: -15px;
 }
 
-.menu-
+nav span:hover {
+    color: rgb(212, 0, 255);
+}
+
+#menustate:checked ~ nav :is(ul, .close) {
+    display: block;
+}
+
+#menustate:checked ~ nav .open {
+    display: none;
+}
